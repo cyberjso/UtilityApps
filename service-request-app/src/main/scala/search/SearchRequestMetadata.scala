@@ -5,7 +5,7 @@ import scala.xml._
 case class SearchRequestMetadata(val returnableFields: Seq[String], val sortableFields: Seq[String], val filters: Seq[String])
 
 class MetadataExtractor(val fileDomainPath: String) {
-  val domainFile = XML.loadFile(fileDomainPath)
+	val domainFile = XML.loadFile(fileDomainPath)
 
 	def extract(): SearchRequestMetadata ={
 	  	
@@ -21,4 +21,8 @@ class MetadataExtractor(val fileDomainPath: String) {
 		new  SearchRequestMetadata(extractReturnableFields(), extractSortableFields(), extractFilters())
 	}
 	
+}
+
+object SearchRequestMetadata {
+	implicit def metadataTopString(metadata: SearchRequestMetadata) = new SearchRequestMetadataWrapper(metadata) 
 }
