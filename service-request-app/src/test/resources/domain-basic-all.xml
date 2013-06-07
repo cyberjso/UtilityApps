@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<datasetConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="search-domain.xsd">
+	<name>PatentBasicAllEntity</name>
+	<label />
+	<collectionName />
+	<dataSetName>nextgenpatentbasic</dataSetName>
+	<compositeField>composite1</compositeField>
+	<rankProfile>rank1</rankProfile>
+	<fastCountDatasetField>nextgenpatentbasic</fastCountDatasetField>
+	<fastSecondaryField>int32field8</fastSecondaryField>
+	<synonymDictionary>syn_qtglobalsynonyms.aut</synonymDictionary>
+	<entitlement>
+		<searchFields>all</searchFields>
+	</entitlement>
+	<etl>
+		<sourceFolder />
+		<sourceFile />
+		<sourcePipeline />
+	</etl>
+	<guiSettings>
+		<columnOrder />
+		<sortByOrder />
+		<filterOrder />
+		<primaryKey />
+		<reportOrder />
+	</guiSettings>
+	<oracleJoins>
+		<oracleJoinMapping>
+			<oracleTableName>PATENT_STRUCTURE</oracleTableName>
+			<oracleJoinColumn>PATENT_ID_NUMERIC</oracleJoinColumn>
+			<fastJoinColumn>patentIdNumeric</fastJoinColumn>
+			<structureId>structuresId</structureId>
+		</oracleJoinMapping>
+	</oracleJoins>
+	<fields>
+		<field>
+			<source />
+			<fastField>multivaluefield31</fastField>
+			<propertyDomainName>patentOriginalAssignees</propertyDomainName>
+			<label />
+		</field>
+		<field>
+			<source />
+			<fastField>returnfield7</fastField>
+			<propertyDomainName>patentInventors</propertyDomainName>
+			<label />
+			<isFastArray>true</isFastArray>
+			<searchableField>multivaluefield37</searchableField>
+			<returnable>true</returnable>
+		</field>
+		<field>
+			<source />
+			<fastField>multivaluefield38</fastField>
+			<propertyDomainName>patentIpcCodes</propertyDomainName>
+			<label />
+		</field>
+		<field>
+			<source />
+			<fastField>datetimeminutefield1</fastField>
+			<propertyDomainName>patentEstimatedExpiryDate</propertyDomainName>
+			<label />
+		</field>
+		<field>
+			<source />
+			<fastField>datetimeminutereturnfield1</fastField>
+			<propertyDomainName>patentFirstPublicationDate</propertyDomainName>
+			<label />
+			<sortable>true</sortable>
+			<searchableField>datetimeminutefield2</searchableField>
+			<fastSortableField>datetimeminutefield2</fastSortableField>
+			<returnable>true</returnable>
+		</field>
+		<field>
+			<source />
+			<fastField>datetimeminutefield3</fastField>
+			<propertyDomainName>patentLastPublicationDate</propertyDomainName>
+			<label />
+			<sortable>true</sortable>
+		</field>
+		<field>
+			<source />
+			<fastField>datetimeminutefield5</fastField>
+			<propertyDomainName>patentAddedDate</propertyDomainName>
+			<label />
+			<sortable>true</sortable>
+		</field>
+		<field>
+			<source />
+			<fastField>singlevaluefield4</fastField>
+			<propertyDomainName>patentInventorsAbstract</propertyDomainName>
+			<label />
+		</field>
+		<field>
+			<fastField>multivaluefield54</fastField>
+			<propertyDomainName>trialInterventionsPrimaryInRegimenNameDisplay</propertyDomainName>
+			<isFastArray>true</isFastArray>/
+			<sortPrefixWidth>11</sortPrefixWidth>
+			<idSearchable>true</idSearchable>
+			<fastIdSearchableField>multivaluefieldfilter18</fastIdSearchableField>
+			<fastNavigator>
+				<fastName>multivaluefieldfilter18navigator</fastName>
+				<fastFieldName>multivaluefieldfilter18</fastFieldName>
+				<name>Trial Interventions Primary In Regimen Name Display</name>
+				<type>string</type>
+			</fastNavigator>
+		</field>
+		<field>
+			<source/>
+			<fastField>returnfield4</fastField>
+			<propertyDomainName>trialPhase</propertyDomainName>
+			<label/>
+			<searchableField>singlevaluefield4</searchableField>
+			<sortable>true</sortable>
+			<idSearchable>true</idSearchable>
+			<sortPrefixWidth>3</sortPrefixWidth>
+			<fastSortableField>singlevaluesortablefield1</fastSortableField>
+			<fastIdSearchableField>multivaluefieldfilter2</fastIdSearchableField>
+		</field>
+
+	</fields>
+</datasetConfig>
