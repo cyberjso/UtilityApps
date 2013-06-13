@@ -6,7 +6,7 @@ import org.testng.annotations.Test
 import search.SearchRequestMetadata.metadataTopString
 
 @Test
-class SearchRequestMetadataWrapperTest {
+class SearchRequestMetadataWrapperTest { 
 
 	def tesReturnableFieldsTag() = 
 		assertTrue(buildMockedSearchRequest().toSoap().contains("<returnFields>field1,field2</returnFields>"))
