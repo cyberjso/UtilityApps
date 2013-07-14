@@ -3,8 +3,8 @@
 <suite name="Suite" parallel="none">
   <test name="Test">
     <classes>
-      <class name="search.MetadataExtractorTest"/
-      <class name="search.SearchRequestMetadataWrapperTest"/>>
+      <class name="com.search.MetadataExtractorTest"/
+      <class name="com.search.SearchRequestMetadataWrapperTest"/>>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

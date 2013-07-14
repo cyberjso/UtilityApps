@@ -1,4 +1,4 @@
-package search
+package com.search
 
 
 class SearchRequestMetadataWrapper(val metadata: SearchRequestMetadata) {
@@ -26,6 +26,11 @@ class SearchRequestMetadataWrapper(val metadata: SearchRequestMetadata) {
         }
 	  
         buidRequestTemplate().replace("#{returnableFields}", metadata.returnableFields.mkString(",")).replace("#{sortableFields}", metadata.sortableFields.mkString(","))
+	}
+	
+	
+	def toRest() : String ={
+		""
 	}
 	
 }

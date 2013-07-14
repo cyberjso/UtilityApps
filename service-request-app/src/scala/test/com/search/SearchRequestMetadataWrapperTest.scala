@@ -1,9 +1,9 @@
-package search
+package com.search
 
 import org.testng.Assert.assertTrue
 import org.testng.annotations.Test
 
-import search.SearchRequestMetadata.metadataTopString
+import com.search.SearchRequestMetadata.metadataTopString
 
 @Test
 class SearchRequestMetadataWrapperTest { 

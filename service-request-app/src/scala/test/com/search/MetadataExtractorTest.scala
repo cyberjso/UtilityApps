@@ -1,4 +1,4 @@
-package search
+package com.search
 
 import org.testng.Assert.assertTrue
 import org.testng.annotations.Test

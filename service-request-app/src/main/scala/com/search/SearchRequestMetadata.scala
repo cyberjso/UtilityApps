@@ -1,6 +1,6 @@
-package search
+package com.search
 
-import scala.xml._
+import scala.xml.XML
 
 case class SearchRequestMetadata(val returnableFields: Seq[String], val sortableFields: Seq[String], val filters: Seq[String])
 
