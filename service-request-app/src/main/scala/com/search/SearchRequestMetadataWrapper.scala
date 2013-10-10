@@ -28,9 +28,8 @@ class SearchRequestMetadataWrapper(val metadata: SearchRequestMetadata) {
         buidRequestTemplate().replace("#{returnableFields}", metadata.returnableFields.mkString(",")).replace("#{sortableFields}", metadata.sortableFields.mkString(","))
 	}
 	
-	
 	def toRest() : String ={
-		""
+		throw new UnsupportedOperationException("The toRest opertion is not supported yet");
 	}
 	
 }

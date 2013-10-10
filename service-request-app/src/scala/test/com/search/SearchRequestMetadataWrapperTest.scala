@@ -3,7 +3,7 @@ package com.search
 import org.testng.Assert.assertTrue
 import org.testng.annotations.Test
 
-import com.search.SearchRequestMetadata.metadataTopString
+import com.search.SearchRequestMetadata.metadataToString
 
 @Test
 class SearchRequestMetadataWrapperTest { 

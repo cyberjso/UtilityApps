@@ -6,5 +6,5 @@
       <class name="com.search.MetadataExtractorTest"/
       <class name="com.search.SearchRequestMetadataWrapperTest"/>>
     </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+  </test>
+</suite> 
